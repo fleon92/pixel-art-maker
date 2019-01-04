@@ -1,16 +1,17 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## Welcome!
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+Hello all!
+
+This was my final for the Intro to Programming nanodegree. Feel free to use in any way, shape or form.
 
 ## Instructions
 
-To get started, open `designs.js` and start building out the app's functionality.
+To use, simply download this as a zip and open up "Index.html" in your preferred browser.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+Once opened, you will see options for height & width. Adjusting these & hitting submit will populate a grid!
 
-## Contributing
+Once the grid exists, you may choose a color by clicking under "Pick a Color". You may use the Color Picker or you may replace the color values if you wish.
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+With your color selected, go ahead and click on any cell & you'll see that it changes color! To reset, click "Submit" again & you'll start with a clean slate.
