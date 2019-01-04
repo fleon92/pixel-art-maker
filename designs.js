@@ -20,10 +20,12 @@ function makeGrid() {
       var cell = document.createElement('td');
       row.appendChild(cell);
     };
+  // this is what the user sees, a grid appended to the bottom of their page
   table.appendChild(grid);
   };
 };
 
+// to make this code modular, i made adding the listeners into a seperate function
 function addColorListener() {
   allCells = document.querySelectorAll("td");
     for (let c = 0;c < allCells.length; c++) {
@@ -33,6 +35,7 @@ function addColorListener() {
     };
 };
 
+// when submit is hit, the default is prevented & instead our functions are called
 document.querySelector("#submit").addEventListener("click", function(e) {
   e.preventDefault();
   makeGrid();
