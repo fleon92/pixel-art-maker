@@ -16,7 +16,7 @@ function makeGrid() {
     grid.appendChild(row);
     for (let c = 1;c <= width.value;c++) {
       var cell = document.createElement('td')
-      grid.appendChild(cell);
+      row.appendChild(cell);
     };
   table.appendChild(grid);
   };
