@@ -6,11 +6,11 @@ const width = document.querySelector("#inputWidth");
 const table = document.querySelector ("#pixelCanvas");
 // When size is submitted by the user, call makeGrid()
 
+// This function creates a grid using user's input for width & height
 function makeGrid() {
-  // Checks if there's an existing table, if so it deletes it
-  if (table.firstChild) {
-    table.removeChild(table.firstChild);
-  };
+  // This removes the rows & cells in-case there are existing elements
+  // To the user, if they select the same settings it will look like a reset
+  table.innerHTML = "";
   var grid = document.createElement("tbody");
   // Loops over based off users input for height & width
   for (let r = 1;r <= height.value;r++) {
@@ -20,12 +20,12 @@ function makeGrid() {
       var cell = document.createElement('td');
       row.appendChild(cell);
     };
-  // this is what the user sees, a grid appended to the bottom of their page
+  // This is what the user sees, a grid appended to the bottom of their page
   table.appendChild(grid);
   };
 };
 
-// to make this code modular, i made adding the listeners into a seperate function
+// To make this code modular, i made adding the listeners into a seperate function
 function addColorListener() {
   allCells = document.querySelectorAll("td");
     for (let c = 0;c < allCells.length; c++) {
